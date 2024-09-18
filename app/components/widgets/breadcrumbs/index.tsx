@@ -23,6 +23,9 @@ const Index = () => {
                 return [{title: 'Dashboard', link: '/'},{title: 'Product 1', link: '/product/Product-1'}]
             case '/product/Product-2':
                 return [{title: 'Dashboard', link: '/'},{title: 'Product 2', link: '/product/Product-2'}]
+            case '/condition/Eczema':
+                return [{title: 'Dashboard', link: '/'},{title: 'Condition 1', link: '/condition/Eczema'}]
+            case '/product/Product-1/feedback': return [{title: 'Dashboard', link: '/'},{title: 'Product 1', link: '/product/Product-1'},{title: 'Feedback', link: '/product/Product-1/feedback'}]
             default:
                 return []
         }

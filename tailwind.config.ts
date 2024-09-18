@@ -9,9 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        cRed:'#FF4545',
+        cOrange:'#FF783E',
+        cYellow:'#FFB23E',
+        cLemon:'#FFE552',
+        cLime:'#EEFF52',
+        cGreen:'#A6FF40',
+        cMint:'#40FF6D',
+        cArctic:'#40FFD3',
+        cLightBlue:'#40CFFF',
+        cBlue:'#408DFF',
+        cViolet:'#9D65FF',
+        cPink:'#F565FF'
       },
+      fontFamily:{
+        inter:['Inter', 'sans-serif'],
+      }
     },
   },
   plugins: [],

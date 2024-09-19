@@ -24,7 +24,10 @@ const Index = () => {
             case '/product/Product-2':
                 return [{title: 'Dashboard', link: '/'},{title: 'Product 2', link: '/product/Product-2'}]
             case '/condition/Eczema':
-                return [{title: 'Dashboard', link: '/'},{title: 'Condition 1', link: '/condition/Eczema'}]
+                return [{title: 'Dashboard', link: '/'},{title: 'Eczema', link: '/condition/Eczema'}]
+            case '/swot':
+                return [{title: 'Dashboard', link: '/'},{title: 'SWOT', link: '/swot'}]
+
             case '/product/Product-1/feedback': return [{title: 'Dashboard', link: '/'},{title: 'Product 1', link: '/product/Product-1'},{title: 'Feedback', link: '/product/Product-1/feedback'}]
             default:
                 return []
@@ -41,7 +44,7 @@ const Index = () => {
                 </Link>]
             case '/product/Product-1':
                 return [
-                    <Link href={'/swot'} key={2}
+                    <Link href={'/product/Product-1/feedback'} key={2}
                           className={'bg-white p-2 px-4 rounded-xl flex items-center justify-center gap-2 text-[#0C5C63] font-bold font-inter'}>
                         <p>Feedback</p>
                         <img src={'/feedback_green.svg'}/>
@@ -49,7 +52,7 @@ const Index = () => {
                 ]
             case '/product/Product-2':
                 return [
-                    <Link href={'/swot'} key={3}
+                    <Link href={'/product/Product-2/feedback'} key={3}
                           className={'bg-white p-2 px-4 rounded-xl flex items-center justify-center gap-2 text-[#0C5C63] font-bold font-inter'}>
                         <p>Feedback</p>
                         <img src={'/feedback_green.svg'}/>

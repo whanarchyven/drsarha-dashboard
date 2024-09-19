@@ -195,6 +195,156 @@ export default function Home({params}: { params: { slug: string } }) {
                             message: "My acne reduced, but I still experience occasional flare-ups. I use it with another product."
                         }
                     ]                }
+            case 'Product-2':
+                return {
+                    negativePositiveData: {
+                        labels: ['Positive', 'Negative'],
+                        datasets: [{
+                            label: 'Percent',
+                            data: [60, 40],
+                            backgroundColor: getColorsArray(),
+                            fill: true,
+                            borderRadius: 0,
+                            borderColor: '#FFF',
+                            borderWidth: 0,
+                        },
+                        ]
+                    },
+                    tags:[
+                        '#effectiveness',
+                        '#sideeffects',
+                        '#availability',
+                        '#rapidaction',
+                        '#treatmentduration',
+                        '#eczema',
+                        '#acne',
+                        '#recommended',
+                        '#easeofuse',
+                        '#expensive'
+                    ],
+                    messages:[
+                        {
+                            age: 22,
+                            condition: 'Acne',
+                            region: 'Île-de-France',
+                            message: "The product helped quickly with inflammation, but it didn't completely clear my acne. A bit pricey."
+                        },
+                        {
+                            age: 35,
+                            condition: 'Eczema',
+                            region: 'Provence-Alpes-Côte d-Azur',
+                            message: "Significantly improved my skin condition with eczema. Results appeared after one week of use."
+                        },
+                        {
+                            age: 50,
+                            condition: 'Psoriasis',
+                            region: 'Brittany',
+                            message: "Helped relieve itching, but psoriasis didn’t completely disappear. Minor side effects."
+                        },
+                        {
+                            age: 28,
+                            condition: 'Seborrheic dermatitis',
+                            region: 'Hauts-de-France',
+                            message: "The product works great! Seborrhea almost cleared up in two weeks."
+                        },
+                        {
+                            age: 45,
+                            condition: 'Rosacea',
+                            region: 'Normandy',
+                            message: "Been using it for two months. Few visible changes, but the irritation is less."
+                        },
+                        {
+                            age: 33,
+                            condition: 'Eczema',
+                            region: 'Auvergne-Rhône-Alpes',
+                            message: "Excellent product, very happy with the results. Dryness and redness disappeared."
+                        },
+                        {
+                            age: 60,
+                            condition: 'Fungal infections',
+                            region: 'Grand Est',
+                            message: "Effective, but the itch didn’t fully go away. The product is expensive for my budget."
+                        },
+                        {
+                            age: 25,
+                            condition: 'Acne',
+                            region: 'Nouvelle-Aquitaine',
+                            message: "Great result, my face cleared up in three days. No side effects noticed."
+                        },
+                        {
+                            age: 18,
+                            condition: 'Acne',
+                            region: 'Île-de-France',
+                            message: "Doesn’t completely remove pimples, but reduces inflammation."
+                        },
+                        {
+                            age: 40,
+                            condition: 'Dermatitis',
+                            region: 'Bourgogne-Franche-Comté',
+                            message: "Reduced inflammation, but I had to use it longer than expected."
+                        },
+                        {
+                            age: 29,
+                            condition: 'Allergic rashes',
+                            region: 'Provence-Alpes-Côte d-Azur',
+                            message: "Great at relieving itching and redness, but I wish it worked faster."
+                        },
+                        {
+                            age: 52,
+                            condition: 'Psoriasis',
+                            region: 'Brittany',
+                            message: "Helped a little with symptoms, but I expected more. Noticeable side effects."
+                        },
+                        {
+                            age: 34,
+                            condition: 'Eczema',
+                            region: 'Île-de-France',
+                            message: "The product works perfectly, results were almost immediate. I will buy again."
+                        },
+                        {
+                            age: 21,
+                            condition: 'Acne',
+                            region: 'Auvergne-Rhône-Alpes',
+                            message: "Skin became clearer, but there are still some small traces of inflammation."
+                        },
+                        {
+                            age: 27,
+                            condition: 'Eczema',
+                            region: 'Grand Est',
+                            message: "Effective product, but too expensive. I’d prefer a more affordable price."
+                        },
+                        {
+                            age: 31,
+                            condition: 'Dermatitis',
+                            region: 'Occitanie',
+                            message: "Significantly reduced itching and redness. No side effects."
+                        },
+                        {
+                            age: 46,
+                            condition: 'Eczema',
+                            region: 'Île-de-France',
+                            message: "Helped a bit, but the symptoms returned after stopping use."
+                        },
+                        {
+                            age: 38,
+                            condition: 'Allergic rashes',
+                            region: 'Hauts-de-France',
+                            message: "Works well, itching was gone after two days. Price is steep."
+                        },
+                        {
+                            age: 55,
+                            condition: 'Herpes',
+                            region: 'Normandy',
+                            message: "Symptoms cleared fairly quickly. The drug is effective."
+                        },
+                        {
+                            age: 30,
+                            condition: 'Acne',
+                            region: 'Provence-Alpes-Côte d-Azur',
+                            message: "My acne reduced, but I still experience occasional flare-ups. I use it with another product."
+                        }
+                    ]                }
+
         }
     }
 

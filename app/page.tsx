@@ -8,6 +8,7 @@ import AmountTab from "@/app/components/ui/amount-tab";
 import ChartScatter from "@/app/components/charts/chart-scatter";
 import ChartLine from "@/app/components/charts/chart-line";
 import Breadcrumbs from "@/app/components/widgets/breadcrumbs";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -157,6 +158,14 @@ export default function Home() {
             <div className={'flex flex-col h-full gap-4 col-span-4'}>
                 <DataTab className={'h-2/5'} title={<p>Percentage distribution <br/>by age groups (percent):</p>} icon={'icon.svg'}>
                     <ChartBar data={yearData}/>
+                    <div className={'flex mt-2 items-center gap-3'}>
+                        <Link className={'p-2 bg-cYellow font-bold text-black rounded-full'} href={'/age/18-30'}>
+                            18-30
+                        </Link>
+                        <Link className={'p-2 bg-cLemon font-bold text-black rounded-full'} href={'/age/30-50'}>
+                            30-50
+                        </Link>
+                    </div>
                 </DataTab>
                 <DataTab className={'h-3/5 !gap-8 !justify-start'} title={<p>FAQ and their distribution<br/>by frequency (number of questions):</p>} icon={'faq.svg'}>
                     <div className={'flex flex-col gap-3'}>
@@ -165,11 +174,29 @@ export default function Home() {
                 </DataTab>
             </div>
             <div className={'flex flex-col h-full gap-4 col-span-5'}>
-                <DataTab className={'h-1/2'} title={<p>Percentage distribution by regions <br/>of France (number of cases):</p>} icon={'region.svg'}>
+                <DataTab className={'h-1/2'}
+                         title={<p>Percentage distribution by regions <br/>of France (number of cases):</p>}
+                         icon={'region.svg'}>
                     <ChartBar postfix={''} data={regionsData}/>
+                    <div className={'flex mt-2 items-center gap-3'}>
+                        <Link className={'p-2 bg-cMint font-bold text-black rounded-full'} href={'/region/Ile-de-France'}>
+                            Ile-de-France
+                        </Link>
+                        <Link className={'p-2 bg-cYellow font-bold text-black rounded-full'} href={'/region/Provence-Alpes-Cote-d-Azur'}>
+                            Provence-Alpes-Cote-d-Azur
+                        </Link>
+                    </div>
                 </DataTab>
-                <DataTab className={'h-1/2'} title={<p>Distribution by dermatological<br/>nosologies (number of cases):</p>} icon={'nosologies.svg'}>
+                <DataTab className={'h-1/2'}
+                         title={<p>Distribution by dermatological<br/>nosologies (number of cases):</p>}
+                         icon={'nosologies.svg'}>
                     <ChartBar postfix={''} data={nosologiesData}/>
+                    <div className={'flex mt-2 items-center gap-3'}>
+                        <Link className={'p-2 bg-cMint font-bold text-black rounded-full'}
+                              href={'/condition/Eczema'}>
+                            Eczema
+                        </Link>
+                    </div>
                 </DataTab>
             </div>
             <div className={'flex flex-col h-full gap-4 col-span-3'}>
@@ -191,11 +218,22 @@ export default function Home() {
             <div className={'col-span-4'}>
                 <DataTab title={<p>Frequency of product selection<br/> (number of cases):</p>} icon={'product.svg'}>
                     <ChartLine hideLegend data={productsData}/>
+                    <div className={'flex mt-2 items-center gap-3'}>
+                        <Link className={'p-2 bg-cMint font-bold text-black rounded-full'}
+                              href={'/product/Product-1'}>
+                            Product 1
+                        </Link>
+                        <Link className={'p-2 bg-cYellow font-bold text-black rounded-full'}
+                              href={'/product/Product-2'}>
+                            Product 2
+                        </Link>
+                    </div>
                 </DataTab>
 
             </div>
             <div className={'col-span-4'}>
-                <DataTab title={<p>Frequency of off-label drug<br/> prescriptions (number of cases):</p>} icon={'drug.svg'}>
+                <DataTab title={<p>Frequency of off-label drug<br/> prescriptions (number of cases):</p>}
+                         icon={'drug.svg'}>
                     <ChartLine hideLegend data={drugsData}/>
                 </DataTab>
 
